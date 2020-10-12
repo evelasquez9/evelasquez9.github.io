@@ -24,6 +24,18 @@
                                     margin-right: auto;
                                     width: 50%;
                         }
+                        /* Three image containers (use 25% for four, and 50% for two, etc) */
+                        .column {
+                                    float: left;
+                                    width: 33.33%;
+                                    padding: 5px;
+                        }
+                        /* Clear floats after image containers */
+                        .row::after {
+                                    content: "";
+                                    clear: both;
+                                    display: table;
+                        }
             </style>
                          
 </head>
@@ -41,12 +53,20 @@
             </thead>
         </table>
             <h1> My Javascript!</h1>
-            <p> Dancing Bitmoji! </p>
-            <a href="https://www.khanacademy.org/computer-programming/velasquez_dancingbitmojifun/6114814033346560" target="_blank"> <img src="dancingBitmoji.png"> </a>
-            <p> Racing Bitmoji! </p>
-            <a href="https://www.khanacademy.org/computer-programming/velasquez_racingfun/5488478952570880" target="_blank"> <img src="racingFun.png"> </a>
-            <p> Resizing Bitmoji! </p>
-            <a href="https://www.khanacademy.org/computer-programming/velasquez_resizebitmoji/6306100870856704" target="_blank"> <img src="resizeBitmoji.png"> </a>
+  <div class="row">
+              <div class="column">
+                          <p> Dancing Bitmoji! </p>
+                 <a href="https://www.khanacademy.org/computer-programming/velasquez_dancingbitmojifun/6114814033346560" target="_blank"> <img src="dancingBitmoji.png" alt="Dancing Bitmoji" style="width:100%"> </a>
+              </div>
+              <div class="column">
+                        <p> Racing Bitmoji! </p>
+                <a href="https://www.khanacademy.org/computer-programming/velasquez_racingfun/5488478952570880" target="_blank"> <img src="racingFun" alt="Racing Bitmoji.png" style="width:100%"> </a>
+              </div>
+              <div class="column">
+                         <p> Resizing Bitmoji! </p>
+                <a href="https://www.khanacademy.org/computer-programming/velasquez_resizebitmoji/6306100870856704" target="_blank"><img src="resizeBitmoji.png" alt="Resizing Bitmoji" style="width:100%"> </a>
+  </div>
+</div>
             <p> Follow Bitmoji! </p>
             <a href="https://www.khanacademy.org/computer-programming/velasquez_follow/6387830472523776" target="blank"> <img src="followBitmoji.png"> </a>
             <p> Decision Bitmoji! </p>
